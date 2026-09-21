@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0e1a;
+}
+
+body {
+  background: radial-gradient(circle at 20% 0%, #131a33 0%, var(--bg) 45%);
+  color: #e9ecf5;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.grad-text {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card {
+  background: #12172a;
+  border: 1px solid #1f2540;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: #fff;
+}
+.btn-primary:hover {
+  opacity: 0.92;
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid #1f2540;
+  color: #e9ecf5;
+}
+.btn-ghost:hover {
+  border-color: #3b82f6;
+}
+
+.field input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #0d1224;
+  border: 1px solid #1f2540;
+  color: #e9ecf5;
+  font-size: 14px;
+  font-family: inherit;
+}
+.field input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
